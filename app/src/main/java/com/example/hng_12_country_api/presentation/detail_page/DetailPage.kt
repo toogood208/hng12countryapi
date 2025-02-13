@@ -98,7 +98,7 @@ fun DetailPage(
                 .padding(innerPadding)
                 .padding(horizontal = 24.dp)
         ) {
-            // If landscape mode, display side-by-side layout
+
             if (isLandscape) {
                 Row(modifier = Modifier.fillMaxSize()) {
                     // Pager takes up half the screen
@@ -135,7 +135,7 @@ fun MyPager(banners: List<String>, modifier: Modifier) {
         contentAlignment = Alignment.Center
     ) {
         Box(modifier = Modifier.fillMaxWidth()) {
-            // Left Arrow (Now on top using zIndex)
+
             IconButton(
                 onClick = {
                     coroutineScope.launch {
@@ -158,7 +158,7 @@ fun MyPager(banners: List<String>, modifier: Modifier) {
                 state = pagerState,
                 pageSpacing = 15.dp,
             ) { page ->
-                PagerItemView(banners[page % banners.size]) // Infinite looping
+                PagerItemView(banners[page % banners.size])
             }
 
             IconButton(
@@ -178,7 +178,7 @@ fun MyPager(banners: List<String>, modifier: Modifier) {
             }
         }
 
-        // Page Indicators (Overlay Inside Pager)
+
         Row(
             modifier = Modifier
                 .align(Alignment.BottomCenter)

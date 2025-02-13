@@ -12,9 +12,8 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.compose.rememberNavController
 import com.example.hng_12_country_api.data.api.RetrofitInstance
 import com.example.hng_12_country_api.data.repository.CountryRepositoryImpl
-import com.example.hng_12_country_api.presentation.viewmodel.CountryViewModel
-import com.example.hng_12_country_api.presentation.home.HomeView
 import com.example.hng_12_country_api.presentation.navigation.AppNavGraph
+import com.example.hng_12_country_api.presentation.viewmodel.CountryViewModel
 import com.example.hng_12_country_api.presentation.viewmodel.ThemeViewModel
 import com.example.hng_12_country_api.presentation.viewmodel.ThemeViewModelFactory
 import com.example.hng_12_country_api.ui.theme.Hng12countryapiTheme
